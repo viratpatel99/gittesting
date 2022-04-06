@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20220405 17:37:41.958" schemaversion="2" generator="Robot 4.1.3 (Python 2.7.15rc1 on linux2)">
+<suite source="/home/virat/Desktop/ROBOT/DemoTest1.robot" id="s1" name="DemoTest1">
+<kw type="SETUP" name="Run Keywords" library="BuiltIn">
+<arg>Open Demo Web Shop Website</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<kw name="Open Demo Web Shop Website">
+<msg timestamp="20220405 17:37:42.253" level="FAIL">No keyword with name 'Open Demo Web Shop Website' found.</msg>
+<status status="FAIL" endtime="20220405 17:37:42.253" starttime="20220405 17:37:42.253"/>
+</kw>
+<status status="FAIL" endtime="20220405 17:37:42.253" starttime="20220405 17:37:42.249"/>
+</kw>
+<test id="s1-t1" name="Verify that the user is able to see and access the &quot;BOOKS&quot; menu from navigation bar.">
+<tag>DEMO_TEST_001</tag>
+<tag>Pratice</tag>
+<status status="FAIL" endtime="20220405 17:37:42.254" starttime="20220405 17:37:42.253">Parent suite setup failed:
+No keyword with name 'Open Demo Web Shop Website' found.</status>
+</test>
+<test id="s1-t2" name="Verify that the user is able to see and access the &quot;COMPUTERS&quot; menu from navigation bar.">
+<tag>DEMO_TEST_002</tag>
+<tag>Pratice</tag>
+<status status="FAIL" endtime="20220405 17:37:42.255" starttime="20220405 17:37:42.255">Parent suite setup failed:
+No keyword with name 'Open Demo Web Shop Website' found.</status>
+</test>
+<test id="s1-t3" name="Verify that the user is able to see and access the &quot;ELECTRONICS&quot; menu from navigation bar.">
+<tag>DEMO_TEST_003</tag>
+<tag>Pratice</tag>
+<status status="FAIL" endtime="20220405 17:37:42.257" starttime="20220405 17:37:42.256">Parent suite setup failed:
+No keyword with name 'Open Demo Web Shop Website' found.</status>
+</test>
+<test id="s1-t4" name="Verify that the user is able to see and access the &quot;APPAREL &amp; SHOES&quot; menu from navigation bar.">
+<tag>DEMO_TEST_004</tag>
+<tag>Pratice</tag>
+<status status="FAIL" endtime="20220405 17:37:42.259" starttime="20220405 17:37:42.258">Parent suite setup failed:
+No keyword with name 'Open Demo Web Shop Website' found.</status>
+</test>
+<test id="s1-t5" name="Verify that the user is able to see and access the &quot;DIGITAL DOWNLOADS&quot; menu from navigation bar.">
+<tag>DEMO_TEST_005</tag>
+<tag>Pratice</tag>
+<status status="FAIL" endtime="20220405 17:37:42.260" starttime="20220405 17:37:42.259">Parent suite setup failed:
+No keyword with name 'Open Demo Web Shop Website' found.</status>
+</test>
+<test id="s1-t6" name="Verify that the user is able to see and access the &quot;JEWELRY&quot; menu from navigation bar.">
+<tag>DEMO_TEST_005</tag>
+<tag>Pratice</tag>
+<status status="FAIL" endtime="20220405 17:37:42.262" starttime="20220405 17:37:42.261">Parent suite setup failed:
+No keyword with name 'Open Demo Web Shop Website' found.</status>
+</test>
+<test id="s1-t7" name="Verify that the user is able to see and access the &quot;GIFT CARDS&quot; menu from navigation bar.">
+<tag>DEMO_TEST_005</tag>
+<tag>Pratice</tag>
+<status status="FAIL" endtime="20220405 17:37:42.263" starttime="20220405 17:37:42.262">Parent suite setup failed:
+No keyword with name 'Open Demo Web Shop Website' found.</status>
+</test>
+<kw type="TEARDOWN" name="Run Keywords" library="BuiltIn">
+<arg>Close All Browsers</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" endtime="20220405 17:37:42.267" starttime="20220405 17:37:42.266"/>
+</kw>
+<status status="PASS" endtime="20220405 17:37:42.267" starttime="20220405 17:37:42.265"/>
+</kw>
+<status status="FAIL" endtime="20220405 17:37:42.267" starttime="20220405 17:37:41.959">Suite setup failed:
+No keyword with name 'Open Demo Web Shop Website' found.</status>
+</suite>
+<statistics>
+<total>
+<stat fail="7" skip="0" pass="0">All Tests</stat>
+</total>
+<tag>
+<stat fail="1" skip="0" pass="0">DEMO_TEST_001</stat>
+<stat fail="1" skip="0" pass="0">DEMO_TEST_002</stat>
+<stat fail="1" skip="0" pass="0">DEMO_TEST_003</stat>
+<stat fail="1" skip="0" pass="0">DEMO_TEST_004</stat>
+<stat fail="3" skip="0" pass="0">DEMO_TEST_005</stat>
+<stat fail="7" skip="0" pass="0">Pratice</stat>
+</tag>
+<suite>
+<stat fail="7" skip="0" id="s1" name="DemoTest1" pass="0">DemoTest1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

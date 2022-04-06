@@ -1,2 +1,1 @@
-# gittesting
-git and github  prectice 
+Repo for the UI Automation Project

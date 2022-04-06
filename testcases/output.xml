@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20220405 18:29:39.555" schemaversion="2" generator="Robot 4.1.3 (Python 2.7.15rc1 on linux2)">
+<suite source="/home/virat/Desktop/ROBOT/testcases/DemoTestCase.robot" id="s1" name="DemoTestCase">
+<kw type="SETUP" name="Run Keywords" library="BuiltIn">
+<arg>Open Demo Web Shop Website</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<kw name="Open Demo Web Shop Website" library="DemoTestRecource">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220405 18:29:39.665" level="INFO">Opening browser 'chrome' to base url 'http://demowebshop.tricentis.com/login'.</msg>
+<status status="PASS" endtime="20220405 18:29:44.450" starttime="20220405 18:29:39.665"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20220405 18:29:44.558" starttime="20220405 18:29:44.450"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${UserIDtxtbox}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220405 18:29:44.559" level="INFO">Typing text 'virus420@gmail.com' into text field 'xpath://*[@id="Email"]'.</msg>
+<status status="PASS" endtime="20220405 18:29:44.650" starttime="20220405 18:29:44.559"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220405 18:29:49.651" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20220405 18:29:49.651" starttime="20220405 18:29:44.650"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${UserPassword}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220405 18:29:49.652" level="INFO">Typing text 'admin@123' into text field 'xpath://*[@id="Password"]'.</msg>
+<status status="PASS" endtime="20220405 18:29:49.741" starttime="20220405 18:29:49.652"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220405 18:29:54.742" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20220405 18:29:54.743" starttime="20220405 18:29:49.741"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${LoginButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220405 18:29:54.744" level="INFO">Clicking element 'xpath://*[@class="button-1 login-button"]'.</msg>
+<status status="PASS" endtime="20220405 18:29:56.380" starttime="20220405 18:29:54.743"/>
+</kw>
+<status status="PASS" endtime="20220405 18:29:56.380" starttime="20220405 18:29:39.665"/>
+</kw>
+<status status="PASS" endtime="20220405 18:29:56.380" starttime="20220405 18:29:39.664"/>
+</kw>
+<test id="s1-t1" name="Verify that the user is able to see and access the &quot;BOOKS&quot; menu from navigation bar.">
+<kw name="Navigate to Books Tab" library="DemoTestRecource">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${BookTab}</arg>
+<arg>${StandardTimeOut}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" endtime="20220405 18:29:56.430" starttime="20220405 18:29:56.382"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BookTab}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220405 18:29:56.431" level="INFO">Clicking element 'xpath://*[@class="top-menu"]//*[@href="/books"]'.</msg>
+<status status="PASS" endtime="20220405 18:29:57.180" starttime="20220405 18:29:56.431"/>
+</kw>
+<status status="PASS" endtime="20220405 18:29:57.181" starttime="20220405 18:29:56.382"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${BooksPageLabel}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220405 18:29:57.201" level="INFO">Current page contains text 'Books'.</msg>
+<status status="PASS" endtime="20220405 18:29:57.201" starttime="20220405 18:29:57.181"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220405 18:30:02.203" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20220405 18:30:02.203" starttime="20220405 18:29:57.202"/>
+</kw>
+<tag>DEMO_TEST_001</tag>
+<tag>Pratice</tag>
+<status status="PASS" endtime="20220405 18:30:02.204" starttime="20220405 18:29:56.380"/>
+</test>
+<test id="s1-t2" name="Verify that the user is able to see and access the &quot;COMPUTERS&quot; menu from navigation bar.">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ComputersTab}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220405 18:30:02.209" level="INFO">Clicking element 'xpath://*[@class="top-menu"]//*[@href="/computers"]'.</msg>
+<status status="PASS" endtime="20220405 18:30:02.939" starttime="20220405 18:30:02.208"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Computers</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220405 18:30:02.962" level="INFO">Current page contains text 'Computers'.</msg>
+<status status="PASS" endtime="20220405 18:30:02.962" starttime="20220405 18:30:02.940"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220405 18:30:07.963" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20220405 18:30:07.963" starttime="20220405 18:30:02.962"/>
+</kw>
+<tag>DEMO_TEST_002</tag>
+<tag>Pratice</tag>
+<status status="PASS" endtime="20220405 18:30:07.964" starttime="20220405 18:30:02.206"/>
+</test>
+<test id="s1-t3" name="Verify that the user is able to see and access the &quot;ELECTRONICS&quot; menu from navigation bar.">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ElectronicsTab}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220405 18:30:07.969" level="INFO">Clicking element 'xpath://*[@class="top-menu"]//*[@href="/electronics"]'.</msg>
+<status status="PASS" endtime="20220405 18:30:08.574" starttime="20220405 18:30:07.968"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Electronics</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220405 18:30:08.588" level="INFO">Current page contains text 'Electronics'.</msg>
+<status status="PASS" endtime="20220405 18:30:08.588" starttime="20220405 18:30:08.575"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220405 18:30:13.589" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20220405 18:30:13.589" starttime="20220405 18:30:08.588"/>
+</kw>
+<tag>DEMO_TEST_003</tag>
+<tag>Pratice</tag>
+<status status="PASS" endtime="20220405 18:30:13.589" starttime="20220405 18:30:07.965"/>
+</test>
+<test id="s1-t4" name="Verify that the user is able to see and access the &quot;APPAREL &amp; SHOES&quot; menu from navigation bar.">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Apparel&amp;ShoesTab}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220405 18:30:13.592" level="INFO">Clicking element 'xpath://*[@class="top-menu"]//*[@href="/apparel-shoes"]'.</msg>
+<status status="PASS" endtime="20220405 18:30:14.543" starttime="20220405 18:30:13.591"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Apparel &amp; Shoes</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220405 18:30:14.563" level="INFO">Current page contains text 'Apparel &amp; Shoes'.</msg>
+<status status="PASS" endtime="20220405 18:30:14.564" starttime="20220405 18:30:14.544"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220405 18:30:19.566" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20220405 18:30:19.566" starttime="20220405 18:30:14.565"/>
+</kw>
+<tag>DEMO_TEST_004</tag>
+<tag>Pratice</tag>
+<status status="PASS" endtime="20220405 18:30:19.566" starttime="20220405 18:30:13.590"/>
+</test>
+<test id="s1-t5" name="Verify that the user is able to see and access the &quot;DIGITAL DOWNLOADS&quot; menu from navigation bar.">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${DigitalDawnloadTab}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220405 18:30:19.568" level="INFO">Clicking element 'xpath://*[@class="top-menu"]//*[@href="/digital-downloads"]'.</msg>
+<status status="PASS" endtime="20220405 18:30:20.312" starttime="20220405 18:30:19.568"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Digital downloads</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220405 18:30:20.338" level="INFO">Current page contains text 'Digital downloads'.</msg>
+<status status="PASS" endtime="20220405 18:30:20.338" starttime="20220405 18:30:20.312"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220405 18:30:25.339" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20220405 18:30:25.340" starttime="20220405 18:30:20.339"/>
+</kw>
+<tag>DEMO_TEST_005</tag>
+<tag>Pratice</tag>
+<status status="PASS" endtime="20220405 18:30:25.341" starttime="20220405 18:30:19.567"/>
+</test>
+<test id="s1-t6" name="Verify that the user is able to see and access the &quot;JEWELRY&quot; menu from navigation bar.">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${JewelryTab}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220405 18:30:25.346" level="INFO">Clicking element 'xpath://*[@class="top-menu"]//*[@href="/jewelry"]'.</msg>
+<status status="PASS" endtime="20220405 18:30:26.165" starttime="20220405 18:30:25.345"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Jewelry</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220405 18:30:26.184" level="INFO">Current page contains text 'Jewelry'.</msg>
+<status status="PASS" endtime="20220405 18:30:26.185" starttime="20220405 18:30:26.165"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220405 18:30:31.187" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20220405 18:30:31.187" starttime="20220405 18:30:26.186"/>
+</kw>
+<tag>DEMO_TEST_006</tag>
+<tag>Pratice</tag>
+<status status="PASS" endtime="20220405 18:30:31.188" starttime="20220405 18:30:25.343"/>
+</test>
+<test id="s1-t7" name="Verify that the user is able to see and access the &quot;GIFT CARDS&quot; menu from navigation bar.">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${GiftcardTab}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220405 18:30:31.192" level="INFO">Clicking element 'xpath://*[@class="top-menu"]//*[@href="/gift-cards"]'.</msg>
+<status status="PASS" endtime="20220405 18:30:31.830" starttime="20220405 18:30:31.192"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Gift Cards</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220405 18:30:31.853" level="INFO">Current page contains text 'Gift Cards'.</msg>
+<status status="PASS" endtime="20220405 18:30:31.854" starttime="20220405 18:30:31.831"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220405 18:30:36.856" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20220405 18:30:36.856" starttime="20220405 18:30:31.855"/>
+</kw>
+<tag>DEMO_TEST_007</tag>
+<tag>Pratice</tag>
+<status status="PASS" endtime="20220405 18:30:36.858" starttime="20220405 18:30:31.190"/>
+</test>
+<kw type="TEARDOWN" name="Run Keywords" library="BuiltIn">
+<arg>Close All Browsers</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" endtime="20220405 18:30:37.202" starttime="20220405 18:30:36.863"/>
+</kw>
+<status status="PASS" endtime="20220405 18:30:37.202" starttime="20220405 18:30:36.862"/>
+</kw>
+<status status="PASS" endtime="20220405 18:30:37.202" starttime="20220405 18:29:39.556"/>
+</suite>
+<statistics>
+<total>
+<stat fail="0" skip="0" pass="7">All Tests</stat>
+</total>
+<tag>
+<stat fail="0" skip="0" pass="1">DEMO_TEST_001</stat>
+<stat fail="0" skip="0" pass="1">DEMO_TEST_002</stat>
+<stat fail="0" skip="0" pass="1">DEMO_TEST_003</stat>
+<stat fail="0" skip="0" pass="1">DEMO_TEST_004</stat>
+<stat fail="0" skip="0" pass="1">DEMO_TEST_005</stat>
+<stat fail="0" skip="0" pass="1">DEMO_TEST_006</stat>
+<stat fail="0" skip="0" pass="1">DEMO_TEST_007</stat>
+<stat fail="0" skip="0" pass="7">Pratice</stat>
+</tag>
+<suite>
+<stat fail="0" skip="0" id="s1" name="DemoTestCase" pass="7">DemoTestCase</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

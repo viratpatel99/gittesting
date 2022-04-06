@@ -1,0 +1,11 @@
+*** Variables ***
+${BookTab}               xpath://*[@class="top-menu"]//*[@href="/books"]
+${ComputersTab}          xpath://*[@class="top-menu"]//*[@href="/computers"]
+${ElectronicsTab}        xpath://*[@class="top-menu"]//*[@href="/electronics"]
+${Apparel&ShoesTab}      xpath://*[@class="top-menu"]//*[@href="/apparel-shoes"]
+${DigitalDawnloadTab}    xpath://*[@class="top-menu"]//*[@href="/digital-downloads"]
+${JewelryTab}            xpath://*[@class="top-menu"]//*[@href="/jewelry"]
+${GiftcardTab}           xpath://*[@class="top-menu"]//*[@href="/gift-cards"]
+${UserIDtxtbox}          xpath://*[@id="Email"]
+${UserPassword}          xpath://*[@id="Password"]  
+${LoginButton}           xpath://*[@class="button-1 login-button"]
